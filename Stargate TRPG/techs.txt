@@ -7,7 +7,7 @@ T: Stargate
 
 T: Gate Ring
 {
-	desc: The ring surrounding the Stargate. Can be used to manually dial a Stargate. Made almost entirely of a Naquadah Superconductor.
+	desc: The ring of the Gate. It's Naquadah Superconducting shell allows it to withstand a virtually infinite number of repeated wormhole connections. The Dialing Mechanism allows the Gate to be Manually Dialed should the DHD die or be lost.
 	diff: 0.85
 	comp: "Naquadah Superconductor" "Dialing Mechanism"
 }
@@ -16,12 +16,131 @@ T: Naquadah Superconductor
 {
 	desc: Naquadah has special properties making it ideal to create superconducting materials of significant size.
 	diff: 0.75
-	comp: "Refined Naquadah" "Naquadah Construction"
+	comp: "Naquadah Construction"
 }
 
-T: Refined Naquadah
+T: Naquadah Refining
 {
-	desc: Refined heavy mineral
+	desc: The process for refining Naquadah into a usable form. Due to its explosive potential, this is no easy task.
 	diff: 0.6
-	comp: "Naquadah Ore" "Naquadah Refinement"
+	comp: "Naquadah" "Heavy Mineral Refining"
+}
+
+T: Naquadah
+{
+	desc: A rare, super-dense mineral used by a wide number of different races.
+	diff: 0.45
+	comp: "Mining"
+}
+
+T: Mining
+{
+	desc: The various processes of extracting raw minerals from the ground.
+	diff: 0.0
+	comp: "NONE"
+}
+
+T: Heavy Mineral Refining
+{
+	desc: The various processes of turning raw, dense minerals into their usable forms.
+	diff: 0.1
+	comp: "NONE"
+}
+
+T: Naquadah Construction
+{
+	desc: Naquadah can be used in its refined form for construction of a variety of different things that may prove useful.
+	diff: 0.75
+	comp: "Naquadah" "Naquadah Refining"
+}
+
+T: Dialing Mechanism
+{
+	desc: The dialing mechanism on the Gate Ring is a relatively simple, analog device that can be used to dial the Stargate should the DHD no longer be present or be inert.
+	diff: 0.45
+	comp: "Naquadah Construction" "Stargate Dialing"
+}
+
+T: Stargate Dialing
+{
+	desc: All Stargates have a unique seven character (one of 39 characters) combination from which they can be accessed consisting of six coordinal characters and a Point of Origin.
+	diff: 0.15
+	comp: "NONE"
+}
+
+T: DHD
+{
+	desc: The DHD (Dial Home Device) is a large, pedestal-shaped computer placed by almost every gate in the network. They provide power to the gate and allow access to easily dial any location. They also provide a variety of safety features to prevent disastrous connections.
+	diff: 0.95
+	comp: "Stargate Network" "DHD Control Crystals" "Cold Fusion Reactor" "Naquadah Construction"
+}
+
+T: Stargate Network
+{
+	desc: The Stargate Network is a vast web of Stargates built by the Ancients which spans many galaxies allowing near-instant travel to other worlds for any intelligent species.
+	diff: 0.85
+	comp: "Stargate Dialing" "Automatic Drift Correction"
+}
+
+T: Automatic Drift Correction
+{
+	desc: By the power of Crystal Computing, the Drift Correction can be done Automatically in conjuction with the Stargate via access to the Stargate Network.
+	diff: 0.70
+	comp: "Manual Drift Correction" "Crystal Processing Core"
+}
+
+T: Manual Drift Correction
+{
+	desc: Stellar drift causes addresses in the gate network to be marginally incorrect overtime. This must be corrected in order to establish any connection.
+	diff: 0.15
+	comp: "Digital Computing" "Stellar Drift"
+}
+
+T: Digital Computing
+{
+	desc: In the digital age, computers can make billions of complex calculations at incredible speeds.
+	diff: 0.0
+	comp: "NONE"
+}
+
+T: Stellar Drift
+{
+	desc: Over many hundreds of years, stars move relative to eachother changing their positions ever so slightly.
+	diff: 0.0
+	comp: "NONE"
+}
+
+T: Crystal Processing Core
+{
+	desc: Crystal computing technology allows for the creation of complex processors with no moving parts, providing trillions of complex calculations a second.
+	diff: 0.95
+	comp: "Crystal Computation"
+}
+
+T: Crystal Computation
+{
+	desc: Special crystals can be grown to conduct quantum particles to perform computational logic.
+	diff: 0.95
+	comp: "Data Crystals" "Digital Computing"
+}
+
+T: Data Crystals
+{
+	desc: Special crystals can be dynamically grown to store massive amounts of data in their quantum superstructures.
+	diff: 0.9
+	comp: "Quantum Mechanics" "Crystals"
+}
+
+T: Quantum Mechanics
+{
+	desc: The branch of mechanics that deals with the mathematical description of the motion and interaction of subatomic particles.
+	diff: 0.05
+	comp: "NONE"
+}
+
+T: Crystals
+{
+	desc: Crystal technology is nearly ubiquitous in highly advanced civilizations for storing and computing vast amounts of data.
+	diff: 0.85
+	comp: "NONE"
 }

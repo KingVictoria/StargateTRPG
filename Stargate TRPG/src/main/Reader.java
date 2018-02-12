@@ -10,7 +10,7 @@ import research.Tech;
 public class Reader {
 	
 	public static void makeTech() throws FileNotFoundException {
-		File f = new File("./techs.txt");
+		File f = new File("./Stargate TRPG/techs.txt");
 		Scanner scan = new Scanner(f);
 		
 		String name;

@@ -24,7 +24,7 @@ public class Main {
 				continue main;
 			}
 			
-			if(input.equalsIgnoreCase("end")) {
+			if(input.equalsIgnoreCase("end") || input.equalsIgnoreCase("exit")) {
 				break;
 			}
 			
