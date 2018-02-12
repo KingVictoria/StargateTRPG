@@ -1,0 +1,27 @@
+T: Stargate
+{
+	desc: Also called Astria Porta in Ancient and Chappa'ai in Goa'uld, as well as various other names across the universe. Stargates are a series of devices built by the Ancients which create wormholes.
+	diff: 0.99
+	comp: "Gate Ring" "DHD" "Wormhole Transportation"
+}
+
+T: Gate Ring
+{
+	desc: The ring surrounding the Stargate. Can be used to manually dial a Stargate. Made almost entirely of a Naquadah Superconductor.
+	diff: 0.85
+	comp: "Naquadah Superconductor" "Dialing Mechanism"
+}
+
+T: Naquadah Superconductor
+{
+	desc: Naquadah has special properties making it ideal to create superconducting materials of significant size.
+	diff: 0.75
+	comp: "Refined Naquadah" "Naquadah Construction"
+}
+
+T: Refined Naquadah
+{
+	desc: Refined heavy mineral
+	diff: 0.6
+	comp: "Naquadah Ore" "Naquadah Refinement"
+}
